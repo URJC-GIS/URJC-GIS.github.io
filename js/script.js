@@ -15,17 +15,24 @@
     if ($(".chart")[0]){
     
       var barColors = [
-        "#F4BE37",
-        "#E2EAF1"
+        "#FF8FE4",
+        "#FF6076",
+        "#EB0D0D",
+        "#FF8401",
+        "#FFF40E",
+        "#53FF0E",
+        "#0EF4FF",
+        "#0E5EFF",
+        "#C560FF"
       ];
 
-      new Chart("orphans", {
+      new Chart("Lunes", {
         type: "doughnut",
         data: {
-          labels: ['Needs Help','Priviledged'],
+          labels: ['10 am','11 am','12 am','13 pm','14 pm','15 pm','16 pm','17 pm','18 pm'],
           datasets: [{
             backgroundColor: barColors,
-            data: [65, 49]
+            data: [6,11,14,16,16,14,11,8,4]
           }]
         },
         options: {
@@ -35,18 +42,18 @@
           },
           title: {
             display: false,
-            text: "World Orphans 2018"
+            text: "Lunes"
           }
         }
       });
 
-      new Chart("labor", {
+      new Chart("Martes", {
         type: "doughnut",
         data: {
-          labels: ['Needs Help','Priviledged'],
+          labels: ['10 am','11 am','12 am','13 pm','14 pm','15 pm','16 pm','17 pm','18 pm'],
           datasets: [{
             backgroundColor: barColors,
-            data: [35, 65]
+            data: [6,10,16,16,14,14,10,8,6]
           }]
         },
         options: {
@@ -56,18 +63,18 @@
           },
           title: {
             display: false,
-            text: "World Children Labor 2018"
+            text: "Martes"
           }
         }
       });
 
-      new Chart("education", {
+      new Chart("Miercoles", {
         type: "doughnut",
         data: {
-          labels: ['Needs Help','Priviledged'],
+          labels: ['10 am','11 am','12 am','13 pm','14 pm','15 pm','16 pm','17 pm','18 pm'],
           datasets: [{
             backgroundColor: barColors,
-            data: [75, 35]
+            data: [7,13,15,14,13,13,11,8,6]
           }]
         },
         options: {
@@ -77,18 +84,18 @@
           },
           title: {
             display: false,
-            text: "World Children Education 2022"
+            text: "Miercoles"
           }
         }
       });
 
-      new Chart("health", {
+      new Chart("Jueves", {
         type: "doughnut",
         data: {
-          labels: ['Needs Help','Priviledged'],
+          labels: ['10 am','11 am','12 am','13 pm','14 pm','15 pm','16 pm','17 pm','18 pm'],
           datasets: [{
             backgroundColor: barColors,
-            data: [85, 25]
+            data: [7,13,15,15,13,13,12,7,5]
           }]
         },
         options: {
@@ -98,7 +105,70 @@
           },
           title: {
             display: false,
-            text: "World Children Health 2022"
+            text: "Jueves"
+          }
+        }
+      });
+
+      new Chart("Viernes", {
+        type: "doughnut",
+        data: {
+          labels: ['10 am','11 am','12 am','13 pm','14 pm','15 pm','16 pm','17 pm','18 pm'],
+          datasets: [{
+            backgroundColor: barColors,
+            data: [7,12,15,15,12,12,12,10,5]
+          }]
+        },
+        options: {
+          plugins: {
+            legend: false,
+            tooltip: false,
+          },
+          title: {
+            display: false,
+            text: "Viernes"
+          }
+        }
+      });
+
+      new Chart("Sabado", {
+        type: "doughnut",
+        data: {
+          labels: ['10 am','11 am','12 am','13 pm','14 pm','15 pm','16 pm','17 pm','18 pm'],
+          datasets: [{
+            backgroundColor: barColors,
+            data: [4,8,12,14,18,18,14,8,4]
+          }]
+        },
+        options: {
+          plugins: {
+            legend: false,
+            tooltip: false,
+          },
+          title: {
+            display: false,
+            text: "Sábado"
+          }
+        }
+      });
+
+      new Chart("Domingo", {
+        type: "doughnut",
+        data: {
+          labels: ['10 am','11 am','12 am','13 pm','14 pm','15 pm','16 pm','17 pm','18 pm'],
+          datasets: [{
+            backgroundColor: barColors,
+            data: [6,10,12,14,16,16,12,10,4]
+          }]
+        },
+        options: {
+          plugins: {
+            legend: false,
+            tooltip: false,
+          },
+          title: {
+            display: false,
+            text: "Domingo"
           }
         }
       });
