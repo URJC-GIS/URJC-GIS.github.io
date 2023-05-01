@@ -114,8 +114,8 @@
     });
   }
 
-  var initScrollNav = function() {
-    $(window).scroll(function() {    
+  /*var initScrollNav = function() {
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 200) {
@@ -123,8 +123,8 @@
         }else{
           $('.site-header').removeClass("bg-dark");
         }
-    }); 
-  }
+    });
+  }*/
 
   $(document).ready(function () {
 
@@ -134,7 +134,7 @@
       $('body').addClass('loaded');
     })
 
-    initScrollNav();
+    //initScrollNav();
     initChocolat();
     initCharts();
     initJarallax();
