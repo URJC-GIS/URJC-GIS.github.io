@@ -28,11 +28,11 @@
 <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
 
 <div id="overlayer">
-	<span class="loader">
+	<div class="loader">
 	  <div class="dot dot-1"></div>
 	  <div class="dot dot-2"></div>
 	  <div class="dot dot-3"></div>
-	</span>
+	</div>
 </div>
 
 <header class="site-header position-fixed py-1 text-white bg-dark">
@@ -40,7 +40,7 @@
 	
 		<div class="container-fluid">
 		  
-		  <a class="navbar-brand" href="index.html"><img alt="Logo Best Tourist" src="images/logo.png" class="logo" /></a>
+		  <a class="navbar-brand" href="index.html"><img alt="Logo Best Tourist" src="images/logo.png" class="logo"></a>
 
 		  <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon name="menu-outline"></ion-icon></button>
 		  
@@ -55,7 +55,7 @@
 			      <a class="nav-link me-4" href="index.html">Inicio</a>
 			    </li>
 			    <li class="nav-item">
-			      <a alt="Enviar postal" class="btn btn-primary btn-lg rounded-pill" href="postal.html">Enviar postal</a>
+			      <a class="btn btn-primary btn-lg rounded-pill" href="postal.html">Enviar postal</a>
 			    </li>
 			  </ul>
 			 </div>
@@ -83,7 +83,7 @@
 			</div>
 		</div>
 	</div>
-	<img src="images/banner.jpg" class="jarallax-img">
+	<img alt="Imagen de fondo de Ferrari Land, atracción de PortAventura" src="images/banner.jpg" class="jarallax-img">
 </section>
 
 <section class="contact-information padding-large">
@@ -126,7 +126,7 @@
 							<div class="col-md-12">
 
 								<textarea class="form-control mt-4 mb-4" name="message" placeholder="Mensaje" style="height: 150px;" required></textarea>
-								<input required type="file"  alt="" placeholder="Imagen" name="imagen" class="form-control">
+								<input required type="file" name="imagen" class="form-control">
 								<br>
 								<label>
 								    <input type="checkbox" required>
@@ -149,10 +149,11 @@
 </section>
 
 <section class="google-map">
-	<div class="mapouter"><div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24060.647682111943!2d1.14112295!3d41.0781515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a15982afa578f7%3A0xd916f583e2ce8551!2sSalou%2C%20Tarragona!5e0!3m2!1ses!2ses!4v1682959354777!5m2!1ses!2ses" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://getasearch.com/fmovies"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
-</section>
-<section class="open-sreet-map">
-	<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.0400962829589846%2C41.03339866991781%2C1.2007713317871096%2C41.122814627344&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=13/41.0781/1.1204">Ver mapa más grande</a></small>
+	<div class="mapouter">
+		<div class="gmap_canvas">
+			<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24060.647682111943!2d1.14112295!3d41.0781515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a15982afa578f7%3A0xd916f583e2ce8551!2sSalou%2C%20Tarragona!5e0!3m2!1ses!2ses!4v1682959354777!5m2!1ses!2ses" width="100%" height="500"></iframe>
+		</div>
+	</div>
 </section>
 
 <footer class="padding-large text-white bg-dark">
