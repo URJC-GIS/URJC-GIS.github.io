@@ -528,7 +528,7 @@ section header .text-muted {
   width:100%;
 }
 
-#mapa {
+.mapa {
   width: 100%;
   height: auto;
 }
