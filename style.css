@@ -518,16 +518,21 @@ section header .text-muted {
 .mapouter {
   position:relative;
   text-align:right;
-  height:500px;
+  height: 500px;
   width:100%;
 }
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
-  height:500px;
+  height:auto;
   width:100%;
 }
 
 .mapa {
   height: 500px;
+}
+
+.map-title {
+  text-align: left;
+  padding-left: 20px;
 }
