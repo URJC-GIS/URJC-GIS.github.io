@@ -140,6 +140,11 @@
 							</div>
 						</div>
 						<div class="row">
+							<div class="form-control col-md-12">
+								<input type="hidden" name="e" value="0">
+							</div>
+						</div>
+						<div class="row">
 							<div class="form-control d-grid">
 								<button type="submit" name="submit" value="0" class="btn btn-dark">Enviar</button>
 							</div>
@@ -206,7 +211,7 @@
 <script>
 	const queryString = window.location.search;
 	const urlParams = new URLSearchParams(queryString);
-	const response = urlParams.get('submit')
+	const response = urlParams.get('e')
 	if (response === "0") {
 		document.getElementById('envio').style.display = "block";
 	}
